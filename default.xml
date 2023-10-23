@@ -9,7 +9,7 @@
 
   <default revision="master" remote="tuna" sync-j="4" />
 
-  <remote  name="android_la64"
+  <remote  name="android-la64"
            fetch="https://github.com/android-la64/"
            review="" />
 
