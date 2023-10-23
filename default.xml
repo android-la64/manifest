@@ -62,6 +62,7 @@
 
 
   <!-- Unused gists: 9 -->
+  <!--
   <project path="prebuilts/clang/host/windows-x86" name="platform/prebuilts/clang/host/windows-x86" clone-depth="1" revision="34279e2a072dc56847e2dcd374989f8493ad41ad" />
   <project path="prebuilts/gcc/darwin-x86/host/headers" name="platform/prebuilts/gcc/darwin-x86/host/headers" groups="pdk,darwin" clone-depth="1" revision="4ac4f7cc41cf3c9e36fc3d6cf37fd1cfa9587a68" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" clone-depth="1" revision="d1591013b95dc22f05266de0ad25bb68c600fccd" />
@@ -71,4 +72,5 @@
   <project path="prebuilts/python/windows-x86" name="platform/prebuilts/python/windows-x86" clone-depth="1" revision="7119932cd3cea23f16db62e683b69c23e415ff09" />
   <project path="prebuilts/clang/host/darwin-x86" name="platform/prebuilts/clang/host/darwin-x86" clone-depth="1" revision="68749492fdd803a022b456a5c11f49a6c632f306" />
   <project path="prebuilts/clang/host/darwin-universal" name="platform/prebuilts/clang/host/darwin-universal" clone-depth="1" revision="592f071af1df99cb463ff5b670cd383efd49a6e1" />
+  -->
 </manifest>
