@@ -28,7 +28,7 @@
   <!-- project path="toolchain/llvm-project" name="toolchain/llvm-project" revision="617109052e5bd421c75c61561ed3c3cbc28abe33" /-->
   <project path="toolchain/llvm-project" name="llvm-project" remote="android-la64" revision="a12_larch" />
 
-  <project path="toolchain/prebuilts/ndk/r24" name="toolchain/prebuilts/ndk/r24" revision="8b2723be32c2093d7b297bb074f4358b7a1fba82" />
+  <project path="toolchain/prebuilts/ndk/r23" name="toolchain/prebuilts/ndk/r23" revision="19ac7e4eded12adb99d4f613490dde6dd0e72664" />
   <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" revision="d0b7aff85e113cc296bb1531d50a931443990a13" />
 
 
