@@ -42,7 +42,6 @@
 
   <project path="system/nvram" name="platform-system-nvram" remote="android-la64" revision="a12_larch" />
   <project path="system/iorap" name="platform-system-iorap" remote="android-la64" revision="a12_larch" />
-  <project path="frameworks/av" name="platform-frameworks-av" remote="android-la64" revision="a12_larch" />
   <project path="external/scudo" name="platform-external-scudo" remote="android-la64" revision="a12_larch" />
   <project path="external/linux-kselftest" name="platform-external-linux-kselftest" remote="android-la64" revision="a12_larch" clone-depth="1" />
   <project path="external/crosvm" name="platform-external-crosvm" remote="android-la64" revision="a12_larch" />
@@ -51,6 +50,36 @@
   <project path="external/llvm-project" name="llvm-project" remote="android-la64" revision="664b187160dc951c2cea3b69f92decf358d8e75a" />
   <project path="system/core" name="platform-system-core" remote="android-la64" revision="a12_larch" />
   <project path="frameworks/base" name="platform-frameworks-base" remote="android-la64" revision="a12_larch" />
+
+  <project path="external/boringssl" name="platform-external-boringssl" remote="android-la64" revision="a12_larch"  />
+  <project path="external/harfbuzz_ng" name="platform-external-harfbuzz_ng" remote="android-la64" revision="a12_larch"  />
+  <project path="external/icu" name="platform-external-icu" remote="android-la64" revision="a12_larch" />
+  <project path="external/libavc" name="platform-external-libavc" remote="android-la64" revision="a12_larch"  />
+  <project path="external/libchrome" name="platform-external-libchrome" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="external/libhevc" name="platform-external-libhevc" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="external/libjpeg-turbo" name="platform-external-libjpeg-turbo" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="external/libmpeg2" name="platform-external-libmpeg2" remote="android-la64" revision="a12_larch"  groups="pdk" />
+  <project path="external/libtextclassifier" name="platform-external-libtextclassifier" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="external/libvpx" name="platform-external-libvpx" remote="android-la64" revision="a12_larch"  groups="pdk" />
+  <project path="external/mdnsresponder" name="platform-external-mdnsresponder" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="external/minijail" name="platform-external-minijail" remote="android-la64" revision="a12_larch"  groups="pdk" />
+  <project path="external/pdfium" name="platform-external-pdfium" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="external/llvm" name="platform-external-llvm" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="external/perfetto" name="platform-external-perfetto" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="external/rust/crates/crossbeam-utils" name="platform-external-rust-crates-crossbeam-utils" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="external/skia" name="platform-external-skia" remote="android-la64" revision="a12_larch" groups="pdk,qcom_msm8x26" />
+  <project path="external/tremolo" name="platform-external-tremolo" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="frameworks/av" name="platform-frameworks-av" remote="android-la64" revision="a12_larch" />
+  <project path="frameworks/compile/libbcc" name="platform-frameworks-compile-libbcc" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="frameworks/compile/mclinker" name="platform-frameworks-compile-mclinker" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="frameworks/compile/slang" name="platform-frameworks-compile-slang" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="frameworks/native" name="platform-frameworks-native" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="frameworks/proto_logging" name="platform-frameworks-proto_logging" remote="android-la64" revision="a12_larch" groups="pdk-cw-fs,pdk-fs" />
+
+
+
+  <project path="external/rust/crates/libc" name="platform/external/rust/crates/libc" groups="pdk" />
+  <project path="external/rust/crates/nix" name="platform/external/rust/crates/nix" groups="pdk" />
 
   <!-- Projects which exclude temporarily
   <project path="external/angle" name="platform/external/angle" groups="pdk" />
@@ -204,7 +233,6 @@
   <project path="external/bc" name="platform/external/bc" groups="pdk" />
   <project path="external/bcc" name="platform/external/bcc" groups="pdk" />
   <project path="external/blktrace" name="platform/external/blktrace" groups="pdk" />
-  <project path="external/boringssl" name="platform/external/boringssl" groups="pdk" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" />
   <project path="external/brotli" name="platform/external/brotli" groups="pdk" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
@@ -306,10 +334,8 @@
   <project path="external/guice" name="platform/external/guice" groups="pdk" />
   <project path="external/gwp_asan" name="platform/external/gwp_asan" groups="pdk" />
   <project path="external/hamcrest" name="platform/external/hamcrest" groups="pdk" />
-  <project path="external/harfbuzz_ng" name="platform/external/harfbuzz_ng" groups="pdk,qcom_msm8x26" />
   <project path="external/hyphenation-patterns" name="platform/external/hyphenation-patterns" groups="pdk" />
   <project path="external/icing" name="platform/external/icing" groups="pdk" />
-  <project path="external/icu" name="platform/external/icu" groups="pdk" />
   <project path="external/igt-gpu-tools" name="platform/external/igt-gpu-tools" groups="pdk" />
   <project path="external/ImageMagick" name="platform/external/ImageMagick" groups="pdk" />
   <project path="external/image_io" name="platform/external/image_io" groups="pdk" />
@@ -350,12 +376,10 @@
   <project path="external/ksoap2" name="platform/external/ksoap2" groups="pdk" />
   <project path="external/libabigail" name="platform/external/libabigail" groups="pdk" />
   <project path="external/libaom" name="platform/external/libaom" groups="pdk" />
-  <project path="external/libavc" name="platform/external/libavc" groups="pdk" />
   <project path="external/libbackup" name="platform/external/libbackup" groups="pdk" />
   <project path="external/libbrillo" name="platform/external/libbrillo" groups="pdk" />
   <project path="external/libcap" name="platform/external/libcap" groups="pdk" />
   <project path="external/libcap-ng" name="platform/external/libcap-ng" groups="pdk" />
-  <project path="external/libchrome" name="platform/external/libchrome" groups="pdk" />
   <project path="external/libchromeos-rs" name="platform/external/libchromeos-rs" groups="pdk" />
   <project path="external/libcppbor" name="platform/external/libcppbor" groups="pdk" />
   <project path="external/libcups" name="platform/external/libcups" groups="pdk-cw-fs,pdk-fs" />
@@ -371,12 +395,9 @@
   <project path="external/libgav1" name="platform/external/libgav1" groups="pdk" />
   <project path="external/libfuse" name="platform/external/libfuse" groups="pdk" />
   <project path="external/libgsm" name="platform/external/libgsm" groups="pdk" />
-  <project path="external/libhevc" name="platform/external/libhevc" groups="pdk" />
   <project path="external/libiio" name="platform/external/libiio" groups="pdk" />
-  <project path="external/libjpeg-turbo" name="platform/external/libjpeg-turbo" groups="pdk" />
   <project path="external/libkmsxx" name="platform/external/libkmsxx" groups="pdk" />
   <project path="external/libldac" name="platform/external/libldac" groups="pdk" />
-  <project path="external/libmpeg2" name="platform/external/libmpeg2" groups="pdk" />
   <project path="external/libnetfilter_conntrack" name="platform/external/libnetfilter_conntrack" groups="pdk" />
   <project path="external/libnfnetlink" name="platform/external/libnfnetlink" groups="pdk" />
   <project path="external/libnl" name="platform/external/libnl" groups="pdk" />
@@ -387,17 +408,14 @@
   <project path="external/libpng" name="platform/external/libpng" groups="pdk" />
   <project path="external/libprotobuf-mutator" name="platform/external/libprotobuf-mutator" groups="pdk" />
   <project path="external/libsrtp2" name="platform/external/libsrtp2" groups="pdk" />
-  <project path="external/libtextclassifier" name="platform/external/libtextclassifier" groups="pdk" />
   <project path="external/libusb" name="platform/external/libusb" groups="pdk" />
   <project path="external/libutf" name="platform/external/libutf" groups="pdk" />
-  <project path="external/libvpx" name="platform/external/libvpx" groups="pdk" />
   <project path="external/libwebm" name="platform/external/libwebm" groups="pdk" />
   <project path="external/libwebsockets" name="platform/external/libwebsockets" groups="pdk" />
   <project path="external/libxaac" name="platform/external/libxaac" groups="pdk" />
   <project path="external/libxkbcommon" name="platform/external/libxkbcommon" groups="pdk" />
   <project path="external/libxml2" name="platform/external/libxml2" groups="pdk,libxml2" />
   <project path="external/libyuv" name="platform/external/libyuv" groups="pdk,libyuv" />
-  <project path="external/llvm" name="platform/external/llvm" groups="pdk" />
   <project path="external/lmfit" name="platform/external/lmfit" groups="pdk" />
   <project path="external/lottie" name="platform/external/lottie" groups="pdk" />
   <project path="external/lua" name="platform/external/lua" groups="pdk" />
@@ -406,11 +424,9 @@
   <project path="external/lzma" name="platform/external/lzma" groups="pdk" />
   <project path="external/marisa-trie" name="platform/external/marisa-trie" groups="pdk" />
   <project path="external/markdown" name="platform/external/markdown" groups="pdk" />
-  <project path="external/mdnsresponder" name="platform/external/mdnsresponder" groups="pdk" />
   <project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/mime-support" name="platform/external/mime-support" groups="pdk" />
   <project path="external/minigbm" name="platform/external/minigbm" groups="pdk" />
-  <project path="external/minijail" name="platform/external/minijail" groups="pdk" />
   <project path="external/mksh" name="platform/external/mksh" groups="pdk" />
   <project path="external/mockftpserver" name="platform/external/mockftpserver" groups="pdk" />
   <project path="external/mockito" name="platform/external/mockito" groups="pdk" />
@@ -448,8 +464,6 @@
   <project path="external/pffft" name="platform/external/pffft" groups="pdk" />
   <project path="external/parameter-framework" name="platform/external/parameter-framework" groups="pdk" />
   <project path="external/pcre" name="platform/external/pcre" groups="pdk" />
-  <project path="external/pdfium" name="platform/external/pdfium" groups="pdk" />
-  <project path="external/perfetto" name="platform/external/perfetto" groups="pdk" />
   <project path="external/piex" name="platform/external/piex" groups="pdk" />
   <project path="external/pigweed" name="platform/external/pigweed" groups="pdk" />
   <project path="external/ply" name="platform/external/ply" groups="pdk" />
@@ -525,7 +539,6 @@
   <project path="external/rust/crates/crossbeam-channel" name="platform/external/rust/crates/crossbeam-channel" groups="pdk" />
   <project path="external/rust/crates/crossbeam-deque" name="platform/external/rust/crates/crossbeam-deque" groups="pdk" />
   <project path="external/rust/crates/crossbeam-epoch" name="platform/external/rust/crates/crossbeam-epoch" groups="pdk" />
-  <project path="external/rust/crates/crossbeam-utils" name="platform/external/rust/crates/crossbeam-utils" groups="pdk" />
   <project path="external/rust/crates/csv" name="platform/external/rust/crates/csv" groups="pdk" />
   <project path="external/rust/crates/csv-core" name="platform/external/rust/crates/csv-core" groups="pdk" />
   <project path="external/rust/crates/derive_arbitrary" name="platform/external/rust/crates/derive_arbitrary" groups="pdk" />
@@ -563,7 +576,6 @@
   <project path="external/rust/crates/itoa" name="platform/external/rust/crates/itoa" groups="pdk" />
   <project path="external/rust/crates/lazy_static" name="platform/external/rust/crates/lazy_static" groups="pdk" />
   <project path="external/rust/crates/lazycell" name="platform/external/rust/crates/lazycell" groups="pdk" />
-  <project path="external/rust/crates/libc" name="platform/external/rust/crates/libc" groups="pdk" />
   <project path="external/rust/crates/libfuzzer-sys" name="platform/external/rust/crates/libfuzzer-sys" groups="pdk" />
   <project path="external/rust/crates/libloading" name="platform/external/rust/crates/libloading" groups="pdk" />
   <project path="external/rust/crates/libm" name="platform/external/rust/crates/libm" groups="pdk" />
@@ -579,7 +591,6 @@
   <project path="external/rust/crates/memchr" name="platform/external/rust/crates/memchr" groups="pdk" />
   <project path="external/rust/crates/memoffset" name="platform/external/rust/crates/memoffset" groups="pdk" />
   <project path="external/rust/crates/mio" name="platform/external/rust/crates/mio" groups="pdk" />
-  <project path="external/rust/crates/nix" name="platform/external/rust/crates/nix" groups="pdk" />
   <project path="external/rust/crates/no-panic" name="platform/external/rust/crates/no-panic" groups="pdk" />
   <project path="external/rust/crates/nom" name="platform/external/rust/crates/nom" groups="pdk" />
   <project path="external/rust/crates/num-derive" name="platform/external/rust/crates/num-derive" groups="pdk" />
@@ -679,7 +690,6 @@
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk,qcom_msm8x26" />
   <project path="external/shaderc/spirv-headers" name="platform/external/shaderc/spirv-headers" groups="pdk" />
   <project path="external/shflags" name="platform/external/shflags" groups="pdk" />
-  <project path="external/skia" name="platform/external/skia" groups="pdk,qcom_msm8x26" />
   <project path="external/skqp" name="platform/external/skqp" groups="cts,pdk" clone-depth="1" />
   <project path="external/sl4a" name="platform/external/sl4a" groups="pdk" />
   <project path="external/slf4j" name="platform/external/slf4j" groups="pdk" />
@@ -708,7 +718,6 @@
   <project path="external/toolchain-utils" name="platform/external/toolchain-utils" />
   <project path="external/toybox" name="platform/external/toybox" groups="pdk" />
   <project path="external/tpm2-tss" name="platform/external/tpm2-tss" groups="pdk" />
-  <project path="external/tremolo" name="platform/external/tremolo" groups="pdk" />
   <project path="external/turbine" name="platform/external/turbine" groups="pdk" />
   <project path="external/unicode" name="platform/external/unicode" groups="pdk" />
   <project path="external/universal-tween-engine" name="platform/external/universal-tween-engine" />
@@ -739,9 +748,6 @@
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk" />
   <project path="external/zstd" name="platform/external/zstd" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk" />
-  <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
-  <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
-  <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
   <project path="frameworks/ex" name="platform/frameworks/ex" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/hardware/interfaces" name="platform/frameworks/hardware/interfaces" groups="pdk" />
   <project path="frameworks/layoutlib" name="platform/frameworks/layoutlib" groups="pdk-cw-fs,pdk-fs" />
@@ -752,7 +758,6 @@
   <project path="frameworks/libs/service_entitlement" name="platform/frameworks/libs/service_entitlement" groups="pdk" />
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/native" name="platform/frameworks/native" groups="pdk" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/car/services" name="platform/frameworks/opt/car/services" groups="pdk-fs" />
@@ -770,7 +775,6 @@
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/tv/tvsystem" name="platform/frameworks/opt/tv/tvsystem" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/proto_logging" name="platform/frameworks/proto_logging" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" />
   <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
