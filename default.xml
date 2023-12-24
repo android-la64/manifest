@@ -40,18 +40,29 @@
   <project path="art" name="platform-art" remote="android-la64" revision="a12_larch" />
   <project path="bionic" name="bionic" remote="android-la64" revision="a12_larch" />
 
+  <project path="system/core" name="platform-system-core" remote="android-la64" revision="a12_larch" />
   <project path="system/nvram" name="platform-system-nvram" remote="android-la64" revision="a12_larch" />
   <project path="system/iorap" name="platform-system-iorap" remote="android-la64" revision="a12_larch" />
+  <project path="system/unwinding" name="platform-system-unwinding" remote="android-la64" revision="a12_larch" />
+  <project path="system/apex" name="platform-system-apex" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="system/bt" name="platform-system-bt" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="system/connectivity/wificond" name="platform-system-connectivity-wificond" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="system/extras" name="platform-system-extras" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="system/libbase" name="platform-system-libbase" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="system/libhwbinder" name="platform-system-libhwbinder" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="system/memory/libmemunreachable" name="platform-system-memory-libmemunreachable" remote="android-la64" revision="a12_larch" groups="pdk" />
+
+
+  <project path="frameworks/av" name="platform-frameworks-av" remote="android-la64" revision="a12_larch" />
+  <project path="frameworks/base" name="platform-frameworks-base" remote="android-la64" revision="a12_larch" />
+  <project path="frameworks/native" name="platform-frameworks-native" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="frameworks/proto_logging" name="platform-frameworks-proto_logging" remote="android-la64" revision="a12_larch" groups="pdk-cw-fs,pdk-fs" />
+
+  <project path="external/boringssl" name="platform-external-boringssl" remote="android-la64" revision="a12_larch"  />
+  <project path="external/llvm-project" name="llvm-project" remote="android-la64" revision="664b187160dc951c2cea3b69f92decf358d8e75a" />
   <project path="external/scudo" name="platform-external-scudo" remote="android-la64" revision="a12_larch" />
   <project path="external/linux-kselftest" name="platform-external-linux-kselftest" remote="android-la64" revision="a12_larch" clone-depth="1" />
   <project path="external/crosvm" name="platform-external-crosvm" remote="android-la64" revision="a12_larch" />
-
-  <project path="system/unwinding" name="platform-system-unwinding" remote="android-la64" revision="a12_larch" />
-  <project path="external/llvm-project" name="llvm-project" remote="android-la64" revision="664b187160dc951c2cea3b69f92decf358d8e75a" />
-  <project path="system/core" name="platform-system-core" remote="android-la64" revision="a12_larch" />
-  <project path="frameworks/base" name="platform-frameworks-base" remote="android-la64" revision="a12_larch" />
-
-  <project path="external/boringssl" name="platform-external-boringssl" remote="android-la64" revision="a12_larch"  />
   <project path="external/harfbuzz_ng" name="platform-external-harfbuzz_ng" remote="android-la64" revision="a12_larch"  />
   <project path="external/icu" name="platform-external-icu" remote="android-la64" revision="a12_larch" />
   <project path="external/libavc" name="platform-external-libavc" remote="android-la64" revision="a12_larch"  />
@@ -66,22 +77,30 @@
   <project path="external/pdfium" name="platform-external-pdfium" remote="android-la64" revision="a12_larch" groups="pdk" />
   <project path="external/llvm" name="platform-external-llvm" remote="android-la64" revision="a12_larch" groups="pdk" />
   <project path="external/perfetto" name="platform-external-perfetto" remote="android-la64" revision="a12_larch" groups="pdk" />
-  <project path="external/rust/crates/crossbeam-utils" name="platform-external-rust-crates-crossbeam-utils" remote="android-la64" revision="a12_larch" groups="pdk" />
   <project path="external/skia" name="platform-external-skia" remote="android-la64" revision="a12_larch" groups="pdk,qcom_msm8x26" />
   <project path="external/tremolo" name="platform-external-tremolo" remote="android-la64" revision="a12_larch" groups="pdk" />
-  <project path="frameworks/av" name="platform-frameworks-av" remote="android-la64" revision="a12_larch" />
-  <project path="frameworks/compile/libbcc" name="platform-frameworks-compile-libbcc" remote="android-la64" revision="a12_larch" groups="pdk" />
-  <project path="frameworks/compile/mclinker" name="platform-frameworks-compile-mclinker" remote="android-la64" revision="a12_larch" groups="pdk" />
-  <project path="frameworks/compile/slang" name="platform-frameworks-compile-slang" remote="android-la64" revision="a12_larch" groups="pdk" />
-  <project path="frameworks/native" name="platform-frameworks-native" remote="android-la64" revision="a12_larch" groups="pdk" />
-  <project path="frameworks/proto_logging" name="platform-frameworks-proto_logging" remote="android-la64" revision="a12_larch" groups="pdk-cw-fs,pdk-fs" />
 
+  <project path="external/rust/crates/libc" name="platform-external-rust-crates-libc" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="external/rust/crates/nix" name="platform-external-rust-crates-nix" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="external/rust/crates/crossbeam-utils" name="platform-external-rust-crates-crossbeam-utils" remote="android-la64" revision="a12_larch" groups="pdk" />
 
+  <project path="packages/apps/Camera2" name="platform-packages-apps-Camera2" remote="android-la64" revision="a12_larch" groups="pdk-fs" />
+  <project path="packages/modules/common" name="platform-packages-modules-common" remote="android-la64" revision="a12_larch" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/modules/Connectivity" name="platform-packages-modules-Connectivity" remote="android-la64" revision="a12_larch" groups="pdk-cw-fs,pdk-fs" />
 
-  <project path="external/rust/crates/libc" name="platform/external/rust/crates/libc" groups="pdk" />
-  <project path="external/rust/crates/nix" name="platform/external/rust/crates/nix" groups="pdk" />
+  <!-- Patches -->
+  <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" groups="pdk" clone-depth="1" />
+  <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk" clone-depth="1" />
+  <project path="prebuilts/rust" name="platform/prebuilts/rust" groups="pdk" clone-depth="1" />
+  <project path="prebuilts/runtime" name="platform/prebuilts/runtime" groups="pdk" clone-depth="1" />
+  <project path="packages/modules/ArtPrebuilt" name="platform/packages/modules/ArtPrebuilt" groups="pdk" clone-depth="1" />
 
   <!-- Projects which exclude temporarily
+  <project path="frameworks/compile/slang" name="platform-frameworks-compile-slang" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="frameworks/compile/libbcc" name="platform-frameworks-compile-libbcc" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="frameworks/compile/mclinker" name="platform-frameworks-compile-mclinker" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />
+
   <project path="external/angle" name="platform/external/angle" groups="pdk" />
   <project path="prebuilts/clang/host/darwin-x86" name="platform/prebuilts/clang/host/darwin-x86" groups="pdk,darwin" clone-depth="1" />
   <project path="prebuilts/bazel/darwin-x86_64" name="platform/prebuilts/bazel/darwin-x86_64" groups="darwin,pdk" clone-depth="1" />
@@ -775,7 +794,6 @@
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/tv/tvsystem" name="platform/frameworks/opt/tv/tvsystem" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" />
   <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan" />
@@ -872,7 +890,6 @@
   <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/Browser2" name="platform/packages/apps/Browser2" groups="pdk-fs" />
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" groups="pdk-fs" />
-  <project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" groups="pdk-fs" />
   <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" groups="pdk-fs" />
@@ -923,13 +940,10 @@
   <project path="packages/inputmethods/LatinIME" name="platform/packages/inputmethods/LatinIME" groups="pdk-fs" />
   <project path="packages/inputmethods/LeanbackIME" name="platform/packages/inputmethods/LeanbackIME" groups="pdk-fs" />
   <project path="packages/modules/adb" name="platform/packages/modules/adb" groups="pdk" />
-  <project path="packages/modules/ArtPrebuilt" name="platform/packages/modules/ArtPrebuilt" groups="pdk" clone-depth="1" />
   <project path="packages/modules/BootPrebuilt/5.4/arm64" name="platform/packages/modules/BootPrebuilt/5.4/arm64" groups="pdk" clone-depth="1" />
   <project path="packages/modules/BootPrebuilt/5.10/arm64" name="platform/packages/modules/BootPrebuilt/5.10/arm64" groups="pdk" clone-depth="1" />
   <project path="packages/modules/CaptivePortalLogin" name="platform/packages/modules/CaptivePortalLogin" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/modules/CellBroadcastService" name="platform/packages/modules/CellBroadcastService" groups="pdk" />
-  <project path="packages/modules/common" name="platform/packages/modules/common" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/modules/Connectivity" name="platform/packages/modules/Connectivity" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/modules/Cronet" name="platform/packages/modules/Cronet" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/modules/ExtServices" name="platform/packages/modules/ExtServices" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/modules/GeoTZ" name="platform/packages/modules/GeoTZ" groups="pdk-cw-fs,pdk-fs" />
@@ -982,7 +996,6 @@
   <project path="prebuilts/checkcolor" name="platform/prebuilts/checkcolor" groups="pdk" clone-depth="1" />
   <project path="prebuilts/checkstyle" name="platform/prebuilts/checkstyle" groups="pdk" clone-depth="1" />
   <project path="prebuilts/clang-tools" name="platform/prebuilts/clang-tools" groups="pdk" clone-depth="1" />
-  <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" groups="pdk" clone-depth="1" />
   <project path="prebuilts/cmdline-tools" name="platform/prebuilts/cmdline-tools" groups="pdk-fs" clone-depth="1" />
   <project path="prebuilts/devtools" name="platform/prebuilts/devtools" groups="pdk-fs" clone-depth="1" />
   <project path="prebuilts/fuchsia_sdk" name="platform/prebuilts/fuchsia_sdk" groups="pdk-fs" clone-depth="1" />
@@ -1012,25 +1025,18 @@
   <project path="prebuilts/module_sdk/SdkExtensions" name="platform/prebuilts/module_sdk/SdkExtensions" groups="pdk" clone-depth="1" />
   <project path="prebuilts/module_sdk/StatsD" name="platform/prebuilts/module_sdk/StatsD" groups="pdk" clone-depth="1" />
   <project path="prebuilts/module_sdk/Wifi" name="platform/prebuilts/module_sdk/Wifi" groups="pdk" clone-depth="1" />
-  <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk" clone-depth="1" />
   <project path="prebuilts/ktlint" name="platform/prebuilts/ktlint" groups="pdk" clone-depth="1" />
   <project path="prebuilts/python/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" groups="linux,pdk,pdk-cw-fs,pdk-fs" clone-depth="1" />
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" groups="pdk" clone-depth="1" />
   <project path="prebuilts/remoteexecution-client" name="platform/prebuilts/remoteexecution-client" groups="pdk" clone-depth="1" />
-  <project path="prebuilts/runtime" name="platform/prebuilts/runtime" groups="pdk" clone-depth="1" />
-  <project path="prebuilts/rust" name="platform/prebuilts/rust" groups="pdk" clone-depth="1" />
   <project path="prebuilts/r8" name="platform/prebuilts/r8" groups="pdk" clone-depth="1" />
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" clone-depth="1" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" clone-depth="1" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" />
-  <project path="system/apex" name="platform/system/apex" groups="pdk" />
-  <project path="system/bt" name="platform/system/bt" groups="pdk" />
   <project path="system/bpf" name="platform/system/bpf" groups="pdk" />
   <project path="system/bpfprogs" name="platform/system/bpfprogs" groups="pdk" />
   <project path="system/ca-certificates" name="platform/system/ca-certificates" groups="pdk" />
   <project path="system/chre" name="platform/system/chre"  groups="pdk" />
-  <project path="system/connectivity/wificond" name="platform/system/connectivity/wificond" groups="pdk" />
-  <project path="system/extras" name="platform/system/extras" groups="pdk" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
   <project path="system/gsid" name="platform/system/gsid" groups="pdk" />
   <project path="system/hardware/interfaces" name="platform/system/hardware/interfaces" groups="pdk" />
@@ -1038,10 +1044,8 @@
   <project path="system/incremental_delivery" name="platform/system/incremental_delivery" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/libartpalette" name="platform/system/libartpalette" groups="pdk" />
-  <project path="system/libbase" name="platform/system/libbase" groups="pdk" />
   <project path="system/libfmq" name="platform/system/libfmq" groups="pdk" />
   <project path="system/libhidl" name="platform/system/libhidl" groups="pdk" />
-  <project path="system/libhwbinder" name="platform/system/libhwbinder" groups="pdk" />
   <project path="system/libprocinfo" name="platform/system/libprocinfo" groups="pdk" />
   <project path="system/libsysprop" name="platform/system/libsysprop" groups="pdk" />
   <project path="system/libufdt" name="platform/system/libufdt" groups="pdk" />
@@ -1054,7 +1058,6 @@
   <project path="system/memory/libdmabufheap" name="platform/system/memory/libdmabufheap" groups="pdk" />
   <project path="system/memory/libmeminfo" name="platform/system/memory/libmeminfo" groups="pdk" />
   <project path="system/memory/libmemtrack" name="platform/system/memory/libmemtrack" groups="pdk" />
-  <project path="system/memory/libmemunreachable" name="platform/system/memory/libmemunreachable" groups="pdk" />
   <project path="system/memory/lmkd" name="platform/system/memory/lmkd" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/nfc" name="platform/system/nfc" groups="pdk" />
