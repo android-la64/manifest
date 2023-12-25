@@ -50,6 +50,7 @@
   <project path="system/libbase" name="platform-system-libbase" remote="android-la64" revision="a12_larch" groups="pdk" />
   <project path="system/libhwbinder" name="platform-system-libhwbinder" remote="android-la64" revision="a12_larch" groups="pdk" />
   <project path="system/memory/libmemunreachable" name="platform-system-memory-libmemunreachable" remote="android-la64" revision="a12_larch" groups="pdk" />
+  <project path="system/security" name="platform-system-security" remote="android-la64" revision="a12_larch" groups="pdk" />
 
 
   <project path="frameworks/av" name="platform-frameworks-av" remote="android-la64" revision="a12_larch" />
@@ -86,6 +87,8 @@
   <project path="packages/apps/Camera2" name="platform-packages-apps-Camera2" remote="android-la64" revision="a12_larch" groups="pdk-fs" />
   <project path="packages/modules/common" name="platform-packages-modules-common" remote="android-la64" revision="a12_larch" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/modules/Connectivity" name="platform-packages-modules-Connectivity" remote="android-la64" revision="a12_larch" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/modules/NeuralNetworks" name="platform-packages-modules-NeuralNetworks" remote="android-la64" revision="a12_larch" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/services/Car" name="platform-packages-services-Car" remote="android-la64" revision="a12_larch" groups="pdk-cw-fs,pdk-fs" />
 
   <!-- Patches -->
   <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" groups="pdk" clone-depth="1" />
@@ -94,9 +97,7 @@
   <project path="prebuilts/runtime" name="platform/prebuilts/runtime" groups="pdk" clone-depth="1" />
   <project path="packages/modules/ArtPrebuilt" name="platform/packages/modules/ArtPrebuilt" groups="pdk" clone-depth="1" />
   <project path="system/apex" name="platform/system/apex" groups="pdk" />
-  <project path="packages/modules/NeuralNetworks" name="platform/packages/modules/NeuralNetworks" groups="pdk-cw-fs,pdk-fs" />
 
-  <project path="packages/services/Car" name="platform/packages/services/Car" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/Car/Calendar" name="platform/packages/apps/Car/Calendar" groups="pdk-fs" />
   <project path="packages/apps/Car/SystemUI" name="platform/packages/apps/Car/SystemUI" groups="pdk-fs" />
   <project path="packages/apps/Car/Cluster" name="platform/packages/apps/Car/Cluster" groups="pdk-fs" />
@@ -1062,7 +1063,6 @@
   <project path="system/memory/lmkd" name="platform/system/memory/lmkd" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/nfc" name="platform/system/nfc" groups="pdk" />
-  <project path="system/security" name="platform/system/security" groups="pdk" />
   <project path="system/sepolicy" name="platform/system/sepolicy" groups="pdk" />
   <project path="system/server_configurable_flags" name="platform/system/server_configurable_flags" groups="pdk"/>
   <project path="system/teeui" name="platform/system/teeui" groups="pdk" />
