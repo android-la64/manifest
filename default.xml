@@ -13,6 +13,10 @@
            fetch="ssh://git@github.com/android-la64/"
            review="" />
 
+  <remote  name="android-la64-gitlab"
+           fetch="ssh://git@8.140.33.210:2222/android/"
+           review="" />
+
   <superproject name="platform/superproject" remote="tuna"/>
   <contactinfo bugurl="go/repo-bug" />
 
@@ -90,14 +94,14 @@
   <project path="packages/modules/NeuralNetworks" name="platform-packages-modules-NeuralNetworks" remote="android-la64" revision="a12_larch" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/services/Car" name="platform-packages-services-Car" remote="android-la64" revision="a12_larch" groups="pdk-cw-fs,pdk-fs" />
 
-  <!-- Patches -->
-  <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" groups="pdk" clone-depth="1" />
-  <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk" clone-depth="1" />
-  <project path="prebuilts/rust" name="platform/prebuilts/rust" groups="pdk" clone-depth="1" />
-  <project path="prebuilts/runtime" name="platform/prebuilts/runtime" groups="pdk" clone-depth="1" />
-  <project path="packages/modules/ArtPrebuilt" name="platform/packages/modules/ArtPrebuilt" groups="pdk" clone-depth="1" />
-  <project path="system/apex" name="platform/system/apex" groups="pdk" />
+  <project path="prebuilts/clang/host/linux-x86" name="platform-prebuilts-clang-host-linux-x86" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" clone-depth="1" />
+  <project path="prebuilts/ndk" name="platform-prebuilts-ndk" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" clone-depth="1" />
+  <project path="prebuilts/runtime" name="platform-prebuilts-runtime" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" clone-depth="1" />
+  <project path="prebuilts/rust" name="platform-prebuilts-rust" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" clone-depth="1" />
+  <project path="packages/modules/ArtPrebuilt" name="platform-packages-modules-ArtPrebuilt" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" clone-depth="1" />
+  <project path="system/apex" name="platform-system-apex" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" />
 
+  <!-- Projects on github -->
   <project path="packages/apps/Car/Calendar" name="platform/packages/apps/Car/Calendar" groups="pdk-fs" />
   <project path="packages/apps/Car/SystemUI" name="platform/packages/apps/Car/SystemUI" groups="pdk-fs" />
   <project path="packages/apps/Car/Cluster" name="platform/packages/apps/Car/Cluster" groups="pdk-fs" />
