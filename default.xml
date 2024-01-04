@@ -37,10 +37,9 @@
   <project name="ndk-x86_64-linux-glibc2.17-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" remote="android-la64" revision="a12_larch" />
 
 
-  <!-- We do NOT submit this repo, please make a symbol link for built fold of clang -->
-  <project path="prebuilts/clang/host/linux-x86" name="platform-prebuilts-clang-host-linux-x86" groups="presubmit" remote="riscv-android" revision="riscv-ndk-release-r23" />
-
   <!-- Projects on gitlab -->
+  <!-- We do NOT submit this repo, please make a symbol link for built fold of clang -->
+  <project path="prebuilts/clang/host/linux-x86" name="ndk-platform-prebuilts-clang-host-linux-x86" groups="presubmit" remote="android-la64-gitlab" revision="a12_larch"  />
   <project groups="presubmit" name="ndk-platform-development" path="development" remote="android-la64-gitlab" revision="a12_larch" />
   <project name="ndk-platform-external-effcee" path="external/effcee" remote="android-la64-gitlab" revision="a12_larch"  />
   <project name="ndk-platform-external-regex-re2" path="external/regex-re2" remote="android-la64-gitlab" revision="a12_larch"  />
