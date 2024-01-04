@@ -18,7 +18,7 @@
            review="" />
 
   <remote  name="android-la64-gitlab"
-           fetch="ssh://git@8.140.33.210:2222/android/"
+           fetch="ssh://git@8.140.33.210:2280/android/"
            review="" />
 
   <superproject name="platform/superproject" remote="aosp" />
