@@ -18,7 +18,7 @@
            review="" />
 
   <remote  name="android-la64-gitlab"
-           fetch="ssh://git@8.140.33.210:2280/android/"
+           fetch="ssh://git@8.140.33.210:2222/android/"
            review="" />
 
   <superproject name="platform/superproject" remote="aosp" />
@@ -52,7 +52,7 @@
   <project groups="presubmit" name="ndk-platform-external-vulkan-headers" path="external/vulkan-headers" remote="android-la64-gitlab" revision="a12_larch" />
   <project groups="presubmit" name="ndk-platform-prebuilts-cmake-linux-x86" path="prebuilts/cmake/linux-x86" remote="android-la64-gitlab" revision="a12_larch"  />
   <project groups="presubmit" name="ndk-platform-prebuilts-ninja-linux-x86" path="prebuilts/ninja/linux-x86" remote="android-la64-gitlab" revision="a12_larch"  />
-  <project clone-depth="1" groups="linux,presubmit" name="ndk-platform-prebuilts-python-linux-x86" path="prebuilts/python3/linux" remote="android-la64-gitlab" revision="a12_larch"  />
+  <project clone-depth="1" groups="linux,presubmit" name="ndk-platform-prebuilts-python-linux-x86" path="prebuilts/python3/linux" remote="android-la64-gitlab" revision="a12_larch" />
   <project groups="linux,presubmit" name="ndk-platform-prebuilts-python-linux-x86-2.7.5" path="prebuilts/python/linux-x86/2.7.5" remote="android-la64-gitlab" revision="a12_larch"  />
   <project groups="presubmit" name="ndk-platform-prebuilts-renderscript-host-linux-x86" path="prebuilts/renderscript/host/linux-x86" remote="android-la64-gitlab" revision="a12_larch"  />
   <project groups="presubmit" name="ndk-platform-prebuilts-simpleperf" path="prebuilts/simpleperf" remote="android-la64-gitlab" revision="a12_larch" />
