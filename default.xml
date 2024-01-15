@@ -109,6 +109,7 @@
   <project path="external/angle" name="platform-external-angle" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" />
   <project path="device/generic/goldfish" name="device-generic-goldfish" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" />
   <project path="development" name="platform-development" remote="android-la64-gitlab" revision="a12_larch" groups="developers,pdk-cw-fs,pdk-fs" />
+  <project path="kernel/prebuilts/5.10/loongarch64" name="kernel-prebuilts-5.10-loongarch64" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" />
 
   <!-- Projects on github -->
   <project path="packages/apps/Car/Calendar" name="platform/packages/apps/Car/Calendar" groups="pdk-fs" />
