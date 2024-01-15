@@ -94,7 +94,7 @@
   <project path="packages/modules/NeuralNetworks" name="platform-packages-modules-NeuralNetworks" remote="android-la64" revision="a12_larch" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/services/Car" name="platform-packages-services-Car" remote="android-la64" revision="a12_larch" groups="pdk-cw-fs,pdk-fs" />
 
-  <project path="prebuilts/clang/host/linux-x86" name="platform-prebuilts-clang-host-linux-x86" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" clone-depth="1" />
+  <project path="prebuilts/clang/host/linux-x86" name="platform-prebuilts-clang-host-linux-x86" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" />
   <project path="prebuilts/ndk" name="platform-prebuilts-ndk" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" clone-depth="1" />
   <project path="prebuilts/runtime" name="platform-prebuilts-runtime" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" clone-depth="1" />
   <project path="prebuilts/rust" name="platform-prebuilts-rust" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" clone-depth="1" />
