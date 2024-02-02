@@ -111,6 +111,8 @@
   <project path="development" name="platform-development" remote="android-la64-gitlab" revision="a12_larch" groups="developers,pdk-cw-fs,pdk-fs" />
   <project path="kernel/prebuilts/5.10/loongarch64" name="kernel-prebuilts-5.10-loongarch64" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" />
 
+  <project path="device/loongson/loongson-kernel" name="device-loongson-loongson-kernel" remote="android-la64-gitlab" revision="a12_larch" />
+
   <!-- Projects on github -->
   <project path="packages/apps/Car/Calendar" name="platform/packages/apps/Car/Calendar" groups="pdk-fs" />
   <project path="packages/apps/Car/SystemUI" name="platform/packages/apps/Car/SystemUI" groups="pdk-fs" />
