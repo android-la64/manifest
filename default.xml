@@ -117,6 +117,7 @@
   <project path="kernel/prebuilts/5.10/loongarch64" name="kernel-prebuilts-5.10-loongarch64" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" />
 
   <project path="device/loongson/loongson-kernel" name="device-loongson-loongson-kernel" remote="android-la64-gitlab" revision="a12_larch" />
+  <project path="prebuilts/build-tools" name="platform-prebuilts-build-tools" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" clone-depth="3" />
 
   <!-- Projects on github -->
   <project path="packages/apps/Car/Calendar" name="platform/packages/apps/Car/Calendar" groups="pdk-fs" />
@@ -1006,7 +1007,6 @@
   <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" groups="pdk-fs" clone-depth="1" />
   <project path="prebuilts/asuite" name="platform/prebuilts/asuite" groups="pdk" clone-depth="1" />
   <project path="prebuilts/bazel/linux-x86_64" name="platform/prebuilts/bazel/linux-x86_64" groups="linux,pdk" clone-depth="1" />
-  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" groups="pdk" clone-depth="1" />
   <project path="prebuilts/bundletool" name="platform/prebuilts/bundletool" groups="pdk" clone-depth="1" />
   <project path="prebuilts/checkcolor" name="platform/prebuilts/checkcolor" groups="pdk" clone-depth="1" />
   <project path="prebuilts/checkstyle" name="platform/prebuilts/checkstyle" groups="pdk" clone-depth="1" />
