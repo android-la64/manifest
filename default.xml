@@ -118,6 +118,7 @@
 
   <project path="device/loongson/loongson-kernel" name="device-loongson-loongson-kernel" remote="android-la64-gitlab" revision="a12_larch" />
   <project path="prebuilts/build-tools" name="platform-prebuilts-build-tools" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" clone-depth="3" />
+  <project path="prebuilts/misc" name="platform-prebuilts-misc" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" clone-depth="2" />
 
   <!-- Projects on github -->
   <project path="packages/apps/Car/Calendar" name="platform/packages/apps/Car/Calendar" groups="pdk-fs" />
@@ -1028,7 +1029,6 @@
   <project path="prebuilts/manifest-merger" name="platform/prebuilts/manifest-merger" groups="pdk" clone-depth="1" />
   <project path="prebuilts/maven_repo/android" name="platform/prebuilts/maven_repo/android" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
   <project path="prebuilts/maven_repo/bumptech" name="platform/prebuilts/maven_repo/bumptech" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
-  <project path="prebuilts/misc" name="platform/prebuilts/misc" groups="pdk" clone-depth="1" />
   <project path="prebuilts/module_sdk/art" name="platform/prebuilts/module_sdk/art" groups="pdk" clone-depth="1" />
   <project path="prebuilts/module_sdk/conscrypt" name="platform/prebuilts/module_sdk/conscrypt" groups="pdk" clone-depth="1" />
   <project path="prebuilts/module_sdk/Connectivity" name="platform/prebuilts/module_sdk/Connectivity" groups="pdk" clone-depth="1" />
