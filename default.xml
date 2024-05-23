@@ -68,7 +68,7 @@
   <project path="frameworks/proto_logging" name="platform-frameworks-proto_logging" remote="android-la64" revision="a12_larch" groups="pdk-cw-fs,pdk-fs" />
 
   <project path="external/boringssl" name="platform-external-boringssl" remote="android-la64" revision="a12_larch"  />
-  <project path="external/llvm-project" name="llvm-project" remote="android-la64" revision="664b187160dc951c2cea3b69f92decf358d8e75a" />
+  <project path="external/llvm-project" name="llvm-project" remote="android-la64" revision="a12_larch" />
   <project path="external/scudo" name="platform-external-scudo" remote="android-la64" revision="a12_larch" />
   <project path="external/linux-kselftest" name="platform-external-linux-kselftest" remote="android-la64" revision="a12_larch" clone-depth="1" />
   <project path="external/crosvm" name="platform-external-crosvm" remote="android-la64" revision="a12_larch" />
@@ -106,6 +106,9 @@
   <project path="packages/modules/ArtPrebuilt" name="platform-packages-modules-ArtPrebuilt" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" clone-depth="1" />
   <project path="system/apex" name="platform-system-apex" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" />
   <project path="cts" name="platform-cts" remote="android-la64-gitlab" revision="a12_larch" groups="cts,pdk-cw-fs,pdk-fs" />
+
+  <project path="external/mesa" name="mesa" remote="android-la64-gitlab" revision="a12_larch" groups="cts,pdk-cw-fs,pdk-fs" />
+  <project path="external/libdrm" name="libdrm" remote="android-la64-gitlab" revision="a12_larch" groups="cts,pdk-cw-fs,pdk-fs" />
 
   <project path="platform_testing" name="platform-platform_testing" remote="android-la64-gitlab" revision="a12_larch" groups="pdk-fs,pdk-cw-fs,cts" />
   <project path="hardware/interfaces" name="platform-hardware-interfaces" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" />
@@ -426,7 +429,6 @@
   <project path="external/libcxx" name="platform/external/libcxx" groups="pdk" />
   <project path="external/libcxxabi" name="platform/external/libcxxabi" groups="pdk" />
   <project path="external/libdivsufsort" name="platform/external/libdivsufsort" groups="pdk" />
-  <project path="external/libdrm" name="platform/external/libdrm" groups="pdk" />
   <project path="external/libepoxy" name="platform/external/libepoxy" groups="pdk" />
   <project path="external/libese" name="platform/external/libese" groups="pdk" />
   <project path="external/libevent" name="platform/external/libevent" groups="pdk" />
@@ -464,7 +466,6 @@
   <project path="external/lzma" name="platform/external/lzma" groups="pdk" />
   <project path="external/marisa-trie" name="platform/external/marisa-trie" groups="pdk" />
   <project path="external/markdown" name="platform/external/markdown" groups="pdk" />
-  <project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/mime-support" name="platform/external/mime-support" groups="pdk" />
   <project path="external/minigbm" name="platform/external/minigbm" groups="pdk" />
   <project path="external/mksh" name="platform/external/mksh" groups="pdk" />
