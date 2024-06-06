@@ -108,18 +108,22 @@
   <project path="cts" name="platform-cts" remote="android-la64-gitlab" revision="a12_larch" groups="cts,pdk-cw-fs,pdk-fs" />
 
   <!--
-  <project path="external/mesa" name="mesa" remote="android-la64-gitlab" revision="a12_larch" groups="cts,pdk-cw-fs,pdk-fs" />
-  <project path="external/libdrm" name="libdrm" remote="android-la64-gitlab" revision="a12_larch" groups="cts,pdk-cw-fs,pdk-fs" />
-  -->
   <project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/libdrm" name="platform/external/libdrm" groups="pdk" />
+  <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" groups="drm_hwcomposer,pdk-fs" />
+  <project path="external/minigbm" name="platform/external/minigbm" groups="pdk" />
+  -->
+  <project path="external/mesa" name="external_mesa" remote="android-la64-gitlab" revision="a12_larch" groups="pdk-cw-fs,pdk-fs" />
+  <project path="external/libdrm" name="platform_external_libdrm" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" />
+  <project path="external/drm_hwcomposer" name="external_drm_hwcomposer" remote="android-la64-gitlab" revision="a12_larch" groups="drm_hwcomposer,pdk-fs" />
+  <project path="external/minigbm" name="external_minigbm" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" />
 
   <project path="platform_testing" name="platform-platform_testing" remote="android-la64-gitlab" revision="a12_larch" groups="pdk-fs,pdk-cw-fs,cts" />
   <project path="hardware/interfaces" name="platform-hardware-interfaces" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" />
   <project path="external/webrtc" name="platform-external-webrtc" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" />
   <project path="external/strace" name="platform-external-strace" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" />
   <project path="external/angle" name="platform-external-angle" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" />
-  <project path="device/generic/goldfish" name="device-generic-goldfish" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" />
+  <project path="device/generic/goldfish" name="device-generic-goldfish" remote="android-la64-gitlab" revision="a12_larch_3a5000" groups="pdk" />
   <project path="development" name="platform-development" remote="android-la64-gitlab" revision="a12_larch" groups="developers,pdk-cw-fs,pdk-fs" />
   <project path="kernel/prebuilts/5.10/loongarch64" name="kernel-prebuilts-5.10-loongarch64" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" />
 
@@ -315,7 +319,6 @@
   <project path="external/doclava" name="platform/external/doclava" groups="pdk" />
   <project path="external/dokka" name="platform/external/dokka" groups="pdk" />
   <project path="external/downloader" name="platform/external/downloader" groups="pdk" />
-  <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" groups="drm_hwcomposer,pdk-fs" />
   <project path="external/drrickorang" name="platform/external/drrickorang" groups="pdk" />
   <project path="external/dtc" name="platform/external/dtc" groups="pdk"/>
   <project path="external/dynamic_depth" name="platform/external/dynamic_depth" groups="pdk" />
@@ -470,7 +473,6 @@
   <project path="external/marisa-trie" name="platform/external/marisa-trie" groups="pdk" />
   <project path="external/markdown" name="platform/external/markdown" groups="pdk" />
   <project path="external/mime-support" name="platform/external/mime-support" groups="pdk" />
-  <project path="external/minigbm" name="platform/external/minigbm" groups="pdk" />
   <project path="external/mksh" name="platform/external/mksh" groups="pdk" />
   <project path="external/mockftpserver" name="platform/external/mockftpserver" groups="pdk" />
   <project path="external/mockito" name="platform/external/mockito" groups="pdk" />
