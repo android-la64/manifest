@@ -43,6 +43,7 @@
 
   <project path="art" name="platform-art" remote="android-la64" revision="a12_larch" >
     <linkfile src="xc_tools/loongarch64.lunch" dest="loongarch64.lunch" />
+    <linkfile src="xc_tools/lboard.lunch" dest="lboard.lunch" />
     <linkfile src="xc_tools/push.sh" dest="push.sh" />
     <linkfile src="xc_tools/bionic_func_tests.sh" dest="bionic_func_tests.sh" />
     <linkfile src="xc_tools/run_gtest.sh" dest="run_gtest.sh" />
@@ -128,6 +129,7 @@
   <project path="kernel/prebuilts/5.10/loongarch64" name="kernel-prebuilts-5.10-loongarch64" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" />
 
   <project path="device/loongson/loongson-kernel" name="device-loongson-loongson-kernel" remote="android-la64-gitlab" revision="a12_larch" />
+  <project path="device/loongson/loongsonboard" name="loongsonboard" remote="android-la64-gitlab" revision="a12_larch" />
   <project path="prebuilts/build-tools" name="platform-prebuilts-build-tools" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" clone-depth="3" />
   <project path="prebuilts/misc" name="platform-prebuilts-misc" remote="android-la64-gitlab" revision="a12_larch" groups="pdk" clone-depth="2" />
 
