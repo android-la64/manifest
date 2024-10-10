@@ -1473,7 +1473,7 @@
 
   <project path="device/loongson/loongsonboard" name="loongsonboard" remote="android-la64" revision="main" />
   <project path="prebuilts/clang/host/linux-x86/clang-r530567b" name="clang-prebuilt-loongarch64" groups="pdk,sysui-studio" remote="android-la64-gitlab" revision="main" clone-depth="1" />
-  <project path="prebuilts/rust/linux-x86/1.80.1b" name="rust-prebuilt-loongarch64" groups="pdk" clone-depth="1" remote="android-la64-gitlab" revision="main"/>
+  <project path="prebuilts/rust/linux-x86/1.80.1b" name="rust-prebuilt-loongarch64" groups="pdk" clone-depth="1" remote="android-la64" revision="main"/>
   <!-- END open-source projects -->
 
 </manifest>
