@@ -90,9 +90,9 @@
     <linkfile dest="Android.bp" src="root.bp" />
 
     <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
+  </project>
 
   <project path="toolchain/prebuilts/sysroot/platform/loongarch64-linux-android" remote="android-la64" name="loongarch64-linux-android-sysroot" revision="main" />
 
   <project path="prebuilts/clang/host/linux-x86/clang-r530567b" remote="android-la64-gitlab" name="clang-prebuilt-loongarch64" revision="main" />
-</project>
 </manifest>
