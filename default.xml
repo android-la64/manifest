@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://mirrors.tuna.tsinghua.edu.cn/git/AOSP"
            review="https://android-review.googlesource.com/" />
   <default revision="refs/tags/android-15.0.0_r1"
            remote="aosp"
@@ -329,7 +329,7 @@
   <project path="external/jsr330" name="platform/external/jsr330" groups="pdk" />
   <project path="external/junit" name="platform/external/junit" groups="pdk" />
   <project path="external/junit-params" name="platform/external/junit-params" groups="pdk" />
-  <project path="external/kernel-headers" name="platform/external/kernel-headers" groups="pdk" />
+  <project path="external/kernel-headers" name="kernel-headers" groups="pdk" remote="android-la64" revision="a15_larch" />
   <project path="external/kmod" name="platform/external/kmod" groups="pdk" />
   <project path="external/kotlinc" name="platform/external/kotlinc" groups="pdk" />
   <project path="external/kotlinpoet" name="platform/external/kotlinpoet" groups="pdk" />
@@ -1286,7 +1286,7 @@
   <project path="prebuilts/checkstyle" name="platform/prebuilts/checkstyle" groups="pdk,sysui-studio" clone-depth="1" />
   <project path="prebuilts/clang-tools" name="platform/prebuilts/clang-tools" groups="pdk" clone-depth="1" />
   <project path="prebuilts/clang/host/darwin-x86" name="platform/prebuilts/clang/host/darwin-x86" groups="notdefault,platform-darwin,pdk,darwin,sysui-studio" clone-depth="1" />
-  <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" groups="pdk,sysui-studio" clone-depth="1" />
+  <project path="prebuilts/clang/host/linux-x86" name="platform-prebuilts-clang-host-linux-x86" groups="pdk,sysui-studio" remote="android-la64-gitlab" revision="a15_larch" clone-depth="1" />
   <project path="prebuilts/cmake/linux-x86" name="platform/prebuilts/cmake/linux-x86" groups="pdk" clone-depth="1" />
   <project path="prebuilts/cmdline-tools" name="platform/prebuilts/cmdline-tools" groups="pdk-cw-fs,pdk-fs,sysui-studio" clone-depth="1" />
   <project path="prebuilts/devtools" name="platform/prebuilts/devtools" groups="pdk-fs" clone-depth="1" />
@@ -1323,12 +1323,12 @@
   <project path="prebuilts/module_sdk/StatsD" name="platform/prebuilts/module_sdk/StatsD" groups="pdk" clone-depth="1" />
   <project path="prebuilts/module_sdk/Uwb" name="platform/prebuilts/module_sdk/Uwb" groups="pdk" clone-depth="1" />
   <project path="prebuilts/module_sdk/Wifi" name="platform/prebuilts/module_sdk/Wifi" groups="pdk" clone-depth="1" />
-  <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk" clone-depth="1" />
+  <project path="prebuilts/ndk" name="prebuilt-ndk" groups="pdk" remote="android-la64" revision="a15_larch" clone-depth="1" />
   <project path="prebuilts/ktlint" name="platform/prebuilts/ktlint" groups="pdk,sysui-studio" clone-depth="1" />
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" groups="pdk" clone-depth="1" />
   <project path="prebuilts/remoteexecution-client" name="platform/prebuilts/remoteexecution-client" groups="pdk" clone-depth="1" />
   <project path="prebuilts/runtime" name="platform/prebuilts/runtime" groups="pdk" clone-depth="1" />
-  <project path="prebuilts/rust" name="platform/prebuilts/rust" groups="pdk" clone-depth="1" />
+  <project path="prebuilts/rust" name="prebuilt-rust" groups="pdk" remote="android-la64-gitlab" revision="a15_larch" clone-depth="1" />
   <project path="prebuilts/r8" name="platform/prebuilts/r8" groups="pdk,sysui-studio" clone-depth="1" />
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk,sysui-studio" clone-depth="1" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools,sysui-studio" clone-depth="1" />
@@ -1472,8 +1472,10 @@
   </project>
 
   <project path="device/loongson/loongsonboard" name="loongsonboard" remote="android-la64" revision="main" />
+  <!--
   <project path="prebuilts/clang/host/linux-x86/clang-r530567b" name="clang-prebuilt-loongarch64" groups="pdk,sysui-studio" remote="android-la64-gitlab" revision="main" clone-depth="1" />
   <project path="prebuilts/rust/linux-x86/1.80.1b" name="rust-prebuilt-loongarch64" groups="pdk" clone-depth="1" remote="android-la64" revision="main"/>
+  -->
   <!-- END open-source projects -->
 
 </manifest>
