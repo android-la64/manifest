@@ -1467,7 +1467,7 @@
     <copyfile src="lk_inc.mk" dest="lk_inc.mk" />
   </project>
 
-  <project path="device/loongson/loongsonboard" name="loongsonboard" remote="android-la64" revision="main" />
+  <project path="device/loongson/loongsonboard" name="loongsonboard" remote="android-la64" revision="a15_larch" />
   <!--
   <project path="prebuilts/clang/host/linux-x86/clang-r530567b" name="clang-prebuilt-loongarch64" groups="pdk,sysui-studio" remote="android-la64-gitlab" revision="main" clone-depth="1" />
   <project path="prebuilts/rust/linux-x86/1.80.1b" name="rust-prebuilt-loongarch64" groups="pdk" clone-depth="1" remote="android-la64" revision="main"/>
