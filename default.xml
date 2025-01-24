@@ -1471,6 +1471,7 @@
   <project path="external/libdrm" name="platform_external_libdrm" remote="android-la64-gitlab" revision="a15_larch" groups="pdk" />
   <project path="external/drm_hwcomposer" name="external_drm_hwcomposer" remote="android-la64-gitlab" revision="a15_larch" groups="drm_hwcomposer,pdk-fs" />
   <project path="external/minigbm" name="external_minigbm" remote="android-la64-gitlab" revision="a15_larch" groups="pdk" />
+  <project path="external/llvm-project" name="llvm-project-maurossi" remote="android-la64" revision="a15_larch" groups="pdk" />
 
   <!--
   <project path="prebuilts/clang/host/linux-x86/clang-r530567b" name="clang-prebuilt-loongarch64" groups="pdk,sysui-studio" remote="android-la64-gitlab" revision="main" clone-depth="1" />
