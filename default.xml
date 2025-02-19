@@ -112,9 +112,9 @@
   <project path="device/google/sunfish" name="device/google/sunfish" groups="device,sunfish" />
   <project path="device/google/sunfish-kernel" name="device/google/sunfish-kernel" groups="device,sunfish" clone-depth="1" />
   <project path="device/google/sunfish-sepolicy" name="device/google/sunfish-sepolicy" groups="device,sunfish" />
-  <project path="device/google/cuttlefish" name="device/google/cuttlefish" groups="device,pdk" />
-  <project path="device/google/cuttlefish_prebuilts" name="device/google/cuttlefish_prebuilts" groups="device,pdk" clone-depth="1" />
-  <project path="device/google/cuttlefish_vmm" name="device/google/cuttlefish_vmm" groups="device,pdk" clone-depth="1" />
+  <project path="device/google/cuttlefish" name="cuttlefish" groups="device,pdk" remote="android-la64" revision="a15_larch"/>
+  <project path="device/google/cuttlefish_prebuilts" name="cuttlefish_prebuilts" groups="device,pdk" clone-depth="1" remote="android-la64" revision="a15_larch"/>
+  <project path="device/google/cuttlefish_vmm" name="cuttlefish_vmm" groups="device,pdk" clone-depth="1" remote="android-la64" revision="a15_larch"/>
   <project path="device/google/trout" name="device/google/trout" groups="device,trout,gull,pdk" />
   <project path="device/google/vrservices" name="device/google/vrservices" groups="pdk" />
   <project path="device/google/zuma" name="device/google/zuma" groups="device,ripcurrent,pdk-gs-arm" />
@@ -215,6 +215,7 @@
   <project path="external/dokka" name="platform/external/dokka" groups="pdk" />
   <project path="external/double-conversion" name="platform/external/double-conversion" groups="pdk" />
   <project path="external/downloader" name="platform/external/downloader" groups="pdk" />
+  <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" groups="drm_hwcomposer,pdk-fs" />
   <project path="external/dtc" name="platform/external/dtc" groups="pdk"/>
   <project path="external/dynamic_depth" name="platform/external/dynamic_depth" groups="pdk" />
   <project path="external/e2fsprogs" name="platform/external/e2fsprogs" groups="pdk" />
@@ -351,6 +352,7 @@
   <project path="external/libcxx" name="platform/external/libcxx" groups="pdk" />
   <project path="external/libcxxabi" name="platform/external/libcxxabi" groups="pdk" />
   <project path="external/libdivsufsort" name="platform/external/libdivsufsort" groups="pdk" />
+  <project path="external/libdrm" name="platform/external/libdrm" groups="pdk" />
   <project path="external/libepoxy" name="platform/external/libepoxy" groups="pdk" />
   <project path="external/libese" name="platform/external/libese" groups="pdk" />
   <project path="external/libevent" name="platform/external/libevent" groups="pdk" />
@@ -405,7 +407,9 @@
   <project path="external/marisa-trie" name="platform/external/marisa-trie" groups="pdk" />
   <project path="external/mbedtls" name="platform/external/mbedtls" groups="pdk" />
   <project path="external/mdnsresponder" name="platform/external/mdnsresponder" groups="pdk" />
+  <project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/mime-support" name="platform/external/mime-support" groups="pdk" />
+  <project path="external/minigbm" name="platform/external/minigbm" groups="pdk" />
   <project path="external/minijail" name="platform-external-minijail" remote="android-la64" revision="a15_larch" groups="pdk" />
   <project path="external/mksh" name="platform/external/mksh" groups="pdk" />
   <project path="external/python/mobly" name="platform/external/python/mobly" groups="pdk" />
@@ -924,7 +928,7 @@
   <project path="external/strace" name="platform-external-strace" remote="android-la64" revision="a15_larch" groups="pdk" />
   <project path="external/stressapptest" name="platform/external/stressapptest" groups="pdk" />
   <project path="external/subsampling-scale-image-view" name="platform/external/subsampling-scale-image-view" groups="pdk" clone-depth="1" />
-  <project path="external/swiftshader" name="platform/external/swiftshader" groups="pdk" />
+  <project path="external/swiftshader" name="swiftshader" groups="pdk" remote="android-la64" revision="a15_larch"/>
   <project path="external/tagsoup" name="platform/external/tagsoup" groups="pdk" />
   <project path="external/tcpdump" name="platform/external/tcpdump" groups="pdk" />
   <project path="external/tensorflow" name="platform-external-tensorflow" remote="android-la64" revision="a15_larch" groups="pdk" />
@@ -1466,11 +1470,12 @@
   <project path="device/loongson/loongsonboard" name="loongsonboard" remote="android-la64" revision="a15_larch" />
 
 
-  <!-- Graphics -->
+  <!--
   <project path="external/mesa" name="external_mesa" remote="android-la64-gitlab" revision="a15_larch" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/libdrm" name="platform_external_libdrm" remote="android-la64-gitlab" revision="a15_larch" groups="pdk" />
   <project path="external/drm_hwcomposer" name="external_drm_hwcomposer" remote="android-la64-gitlab" revision="a15_larch" groups="drm_hwcomposer,pdk-fs" />
   <project path="external/minigbm" name="external_minigbm" remote="android-la64-gitlab" revision="a15_larch" groups="pdk" />
+  -->
   <project path="external/llvm-project" name="llvm-project-maurossi" remote="android-la64" revision="a15_larch" groups="pdk" />
 
   <!--
