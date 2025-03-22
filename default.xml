@@ -4,8 +4,8 @@
   <remote name="aosp" fetch="https://mirrors.tuna.tsinghua.edu.cn/git/AOSP" review="https://android-review.googlesource.com/" />
   <default revision="refs/tags/android-15.0.0_r3" remote="aosp" sync-j="4" />
 
-  <remote name="android-la64" fetch="ssh://git@github.com/android-la64/"/>
-  <remote name="android-la64-gitlab" fetch="ssh://git@8.140.33.210:2222/android/"/>
+  <remote name="android-la64" fetch="https://github.com/android-la64/"/>
+  <remote name="android-la64-gitlab" fetch="http://8.140.33.210:2280/android/"/>
 
   <superproject name="platform/superproject" remote="aosp" revision="android-15.0.0_r3"/>
   <contactinfo bugurl="go/repo-bug" />
