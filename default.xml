@@ -34,6 +34,7 @@
   <remove-project name="platform/external/libhevc" remote="aosp"/>
   <remove-project name="platform/external/libjpeg-turbo" remote="aosp"/>
   <remove-project name="platform/external/libmpeg2" remote="aosp"/>
+  <remove-project name="platform/external/libpng" remote="aosp"/>
   <remove-project name="platform/external/libtextclassifier" remote="aosp"/>
   <remove-project name="platform/external/libvpx" remote="aosp"/>
   <remove-project name="platform/external/llvm" remote="aosp"/>
@@ -113,6 +114,7 @@
   <project path="external/libhevc" name="platform-external-libhevc" remote="android-la64" revision="a15_larch" groups="pdk" />
   <project path="external/libjpeg-turbo" name="platform-external-libjpeg-turbo" remote="android-la64" revision="a15_larch" groups="pdk" />
   <project path="external/libmpeg2" name="platform-external-libmpeg2" remote="android-la64" revision="a15_larch" groups="pdk" />
+  <project path="external/libpng" name="platform-external-libpng" remote="android-la64" revision="a15_larch" groups="pdk" />
   <project path="external/libtextclassifier" name="platform-external-libtextclassifier" remote="android-la64" revision="a15_larch" groups="pdk" />
   <project path="external/libvpx" name="platform-external-libvpx" remote="android-la64" revision="a15_larch" groups="pdk" />
   <project path="external/llvm" name="platform-external-llvm" remote="android-la64" revision="a15_larch" groups="pdk" />
